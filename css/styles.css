@@ -36,19 +36,12 @@ main section.esquerda, .direita{
     font-size: 10px;
 }
 
-main section div.suas-series, .recomendacoes{
+main section div.suas-series, .recomendacoes, .pessoas, .estatisticas{
     display: flex;
     align-items: center;
     flex-direction: column;
     border: 1px solid;
     height: 50vh;
-}
-
-main section div.estatisticas, .pessoas{
-    display: flex;
-    justify-content: center;
-    height:50vh;
-    border: 1px solid;
 }
 
 main section.centro{
@@ -67,8 +60,9 @@ main section div.caixas{
 }
 
 main section div.series{
-    width: 15vh;
-    height: 10vh;
+    background-color: white;
+    width: 100%;
+    height: 20%;
     border: 1px solid;
     border-radius: 5px;
     display: flex;
@@ -76,3 +70,48 @@ main section div.series{
     justify-content: center;
 }
 
+main section div.pess{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+        height:50vh;
+        width: 20vh;    
+}
+
+main section div.pess p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 120px;
+    height:5vh;
+    width: 5vh;
+}
+
+main section.contato{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 30%;
+    height: 100%;
+}
+
+button{
+    width: 100px;
+    height: 25px;
+    background-color: #e9e3e3;
+    
+}
+
+textarea{
+    resize: none;
+}
+
+label, input{
+    margin: 5px 0;
+}
+
+form{
+    width:40%;
+}
