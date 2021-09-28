@@ -9,19 +9,28 @@
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="sobre-nos.html">Sobre nós</a></li>
-            <li><a href="lista-posts.html">Posts</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
-        </ul>
+        <div class="cabecalho">
+            <div class="logo">
+                <a href="home.html"><img src="./img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="lupa">
+                <img src="./img/loupe (1).png" alt="pesquisa">
+            </div>
+            <div class="perfil">
+                <a class="entrar" href="login.html">
+                    <p>Entrar</p>
+                </a>
+                <a href="cadastro.html">
+                    <p>Registrar</p>
+                </a>
+                <a class="fotoperfil" href="/html/perfil"><img src="./img/perfil.png" alt="perfil"></p></a>
+            </div>
+        </div>
     </header>
     <main>
         <section class="esquerda">
             <div class="suas-series">
-                <h1>Suas Séries</h1>
+                <h1>Sua Lista</h1>
                 <div class="caixas">
                     <div class="series">
                         <p>Série 1</p>
@@ -41,7 +50,23 @@
             
         </section>
         <section class="centro">
-            <h1>Home</h1>
+            <h1>Cadastro</h1>
+            <section class=cadastro>
+                <form class="">
+                    <label for="nome">Nome:</label>
+                    <input required="required" type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>
+                    <label for="email">E-mail:</label>
+                    <input required="required" type="email" id="email" name="email"><br>
+                    <label for="data">Data Nascimento</label>
+                    <input type="date" name="data" id="data"><br>
+                    <label for="senha">Cadastre uma senha:</label>
+                    <input type="password" id="senha" name="senha"><br>
+                    <label for="senha">Repita a senha:</label>
+                    <input type="password" id="senha" name="senha"><br>
+                    <label for="arq">Selecione a imagem do perfil:</label>
+                    <input type="file" name="arq" id="arq" accept=".jpg" multiple><br>
+                    <button type="submit">Enviar</button>
+            </section>
         </section>
         <section class="direita">
             <div class="recomendacoes">
@@ -68,10 +93,13 @@
                     </div>
                 </class>
         </section>
+        
     </main>
     
     <footer>
-        
+        <p><a href="contato.html">Contato</a></p>
+        <p><a href="sobre-nos.html">Quem Somos</a></p>
+        <p><a href="faq.html">FAQ</a></p>
     </footer>
 </body>
 </html>

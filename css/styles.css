@@ -2,28 +2,52 @@
     font-family: arial,sans-serif;
 }
 
-header{
-    background: rgb(248, 246, 246);
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;  
-    border: 1px solid;
+header a{
+    color: white;
 }
 
-header ul {
-    list-style: none;
+header div.cabecalho{
+    width:1440;
+    height: 73px;
+    background-color: #1C3EB7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+header div div a.entrar{
+    margin-right: 15px;
+}
+
+
+header div div.logo{
+    margin-left: 15px;
+}
+
+header div div.perfil{
+    color: black;
     display: flex;
     align-items: center;
-  }
-  
-  header ul li {
-    margin-right: 30px;
-  }
+}
+
+header div a.fotoperfil{
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+
+
+
+
 
 main{
     display: flex;
     justify-content: space-between;
+    width:100%;
+    height: 100vh;
 }
 
 main section.esquerda, .direita{
@@ -47,7 +71,8 @@ main section div.suas-series, .recomendacoes, .pessoas, .estatisticas{
 main section.centro{
     width:150vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
 }
 
 main section div.caixas{
@@ -77,6 +102,7 @@ main section div.pess{
         align-items: center;
         height:50vh;
         width: 20vh;    
+        
 }
 
 main section div.pess p{
@@ -87,21 +113,74 @@ main section div.pess p{
     border-radius: 120px;
     height:5vh;
     width: 5vh;
+    background-color: rgb(104, 168, 252);
 }
 
-main section.contato{
+main .contato, .cadastro{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+}
+
+main section.contato div{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    width: 30%;
+    width: 50vh;
     height: 100%;
+}
+
+
+main .contato h1{
+    text-align: center;
+}
+
+main .conheca{
+    display:flex;
+    justify-content: space-around;
+    width:80vh;
+}
+
+main .time{
+    display:flex;
+}
+
+main .foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:10vh;
+}
+
+main .logos{
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+main .logos img{
+    width:30px;
+}
+
+main .centro h2{
+    margin-top: 10vh;
+}
+
+main .centro h1{
+    text-align: center;
+}
+
+main .log{
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
 button{
     width: 100px;
     height: 25px;
     background-color: #e9e3e3;
-    
 }
 
 textarea{
@@ -115,3 +194,14 @@ label, input{
 form{
     width:40%;
 }
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:black;
+}
+footer a{
+    color: white;
+}
+
+
