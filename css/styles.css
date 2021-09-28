@@ -148,7 +148,7 @@ main .time{
 
 main .foto{
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     width:10vh;
 }
@@ -160,7 +160,7 @@ main .logos{
 }
 
 main .logos img{
-    width:30px;
+    width:20px;
 }
 
 main .centro h2{
