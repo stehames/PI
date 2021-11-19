@@ -177,6 +177,20 @@ main .log{
     justify-content: center;
 }
 
+main .pagina-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vh;
+    margin-right: 35px;
+}
+
+main .pagina-login img{
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
 button{
     width: 100px;
     height: 25px;
