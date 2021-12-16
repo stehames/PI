@@ -1,0 +1,19 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+
+<main>
+        <section class="contato">
+            <div>
+                <h1>Contato</h1>
+                <label for="nome">Nome:</label>
+                <input required="required" type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                <label for="email">E-mail:</label>
+                <input required="required" type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                <label for="mensagem">Deixe sua mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea><br>
+                <button type="submit">Enviar</button>
+            </div>
+        </section>  
+</main>
+
+<%- include('./partials/footer') %>

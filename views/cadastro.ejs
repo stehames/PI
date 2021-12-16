@@ -1,0 +1,24 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+    <main>
+        <section class=cadastro>
+               <form class="">
+                    <h2>Cadastro</h2>
+                    <label for="nome">Nome:</label>
+                    <input required="required" type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>
+                    <label for="email">E-mail:</label>
+                    <input required="required" type="email" id="email" name="email"><br>
+                    <label for="data">Data Nascimento</label>
+                    <input type="date" name="data" id="data"><br>
+                    <label for="senha">Cadastre uma senha:</label>
+                    <input type="password" id="senha" name="senha"><br>
+                    <label for="senha">Repita a senha:</label>
+                    <input type="password" id="senha" name="senha"><br>
+                    <label for="arq">Selecione a imagem do perfil:</label>
+                    <input type="file" name="arq" id="arq" accept=".jpg" multiple><br>
+                    <button type="submit">Cadastrar</button>
+                    <br><br><br><br>
+            </section>
+        
+    </main>
+<%- include('./partials/footer') %>
